@@ -1,0 +1,77 @@
+<notifier-container></notifier-container>
+<div class="booth_details">
+  <div class="contaienr">
+    <p>{{booth$.title}}</p>
+    <div class="booth_manager" *ngIf="booth$.manager != undefined">
+      <span>Manager:</span>
+      <span>{{booth$.manager}}</span>
+    </div>
+    <div class="sales_manager" *ngIf="booth$.saleManager != undefined">
+      <span>Sales Manager :</span>
+      <span>{{booth$.saleManager}}</span>
+    </div>
+    <!-- <div class="sales_manager" *ngIf="booth$.email">
+      <span>Email :</span>
+      <span>{{booth$.email}}</span>
+    </div>
+    <div class="sales_manager" *ngIf="booth$.address">
+      <span>Address :</span>
+      <span>{{booth$.address}}</span>
+    </div> -->
+    <div class="website" *ngIf="booth$.website != undefined">
+      <img src="../../assets/icons/domain.svg" alt="">
+      <a href="booth$.website" >{{booth$.website}}</a>
+    </div>
+    <div class="website" *ngIf="booth$.email != undefined">
+        <img src="../../assets/icons/email.svg" alt="">
+        <a href="booth$.website" >{{booth$.email}}</a>
+      </div>
+    <div class="phone" *ngIf="booth$.phone != undefined">
+      <img src="../../assets/icons/phone-call.svg" alt="">
+      <span>{{booth$.phone}}</span>
+    </div>
+    <div class="booth_room">
+      <img src="../../assets/icons/Telegram Archive (4)/location.svg" alt="">
+      <span>{{booth$.location}}</span>
+    </div>
+    <div class="booth_room" *ngIf="booth$.address != undefined">
+        <img src="../../assets/icons/addres.svg" alt="">
+        <span>{{booth$.address}}</span>
+    </div>
+    <div class="booth_button">
+      <div class="row">
+
+
+        <div class="col-6 add_note">
+          <button name="add" [routerLink]="['/AddNote/Exhibition : '+ booth$.title]">Add Notes</button>
+        </div>
+        <div class="col-6 show_notes">
+          <button name="showAll" [routerLink]="['/notes']">Show Notes</button>
+        </div>
+      </div>
+    </div>
+    <div class="booth_rating">
+      <div style="background: #fff;border-radius: 50px "> <span class="title">Your Score :</span>
+        <star-rating value="{{myScore}}"  checkedcolor="gold" uncheckedcolor="gray" size="25px"
+          readonly="false" (rate)="ratingClick($event,id)"></star-rating>
+      </div>
+    </div>
+    <div class="booth_rating" *ngIf="booth$.rating != 0">
+      <div style="background: #fff;border-radius: 50px "> <span class="title">Average :</span>
+        <star-rating value="{{booth$.rating.toFixed(0)}}"  checkedcolor="gold" uncheckedcolor="gray" size="25px"
+          readonly="true"></star-rating>
+      </div>
+    </div>
+    <div class="products"  *ngIf="booth$.product">
+      <h3>Products</h3>
+      <p [innerHTML]="booth$.product">
+      </p>
+    </div>
+    <div class="products" *ngIf="booth$.service">
+      <h3>Services</h3>
+      <p [innerHTML]="booth$.service">
+      </p>
+    </div>
+
+  </div>
+</div>

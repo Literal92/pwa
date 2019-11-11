@@ -1,0 +1,44 @@
+.note_list{
+  margin: 20px 0px;
+  margin-top: 70px;
+}
+.note{
+  padding: 15px;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.note .note_cat{
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.note .note_title{
+  font-size: 14px;
+  color: #012C3D;
+  font-weight: bold;
+  margin-bottom: 5px 0px;
+}
+.note .note_summry{
+  color: #a4a4a4;
+  font-size: 13px;
+  margin-bottom: 0;
+  direction: ltr;
+
+}
+.plus {
+  color: white;
+  background-color: #084A64;
+  font-size: 28px;
+  padding: 8px 21px;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 25px;
+  right: 19px;
+  -webkit-box-shadow: 0px 2px 9px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 2px 9px -2px rgba(0,0,0,1);
+  box-shadow: 0px 2px 9px -2px rgba(0,0,0,1);
+}
+

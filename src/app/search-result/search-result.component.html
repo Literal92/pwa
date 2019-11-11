@@ -1,0 +1,17 @@
+<notifier-container></notifier-container>
+<div class="search_results">
+  <div class="container" *ngFor="let item of SearchResult">
+    <div class="result" (click)="onClick(item.id,item.type,item.categoryId)">
+      <p class="type">{{item.type}}</p>
+      <p class="title">{{item.title}}</p>
+    </div>
+    <!-- <div class="result">
+      <p class="type">Lecture</p>
+      <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et dignissimos</p>
+    </div>
+    <div class="result">
+      <p class="type">Lecture</p>
+      <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et dignissimos</p>
+    </div> -->
+  </div>
+</div>

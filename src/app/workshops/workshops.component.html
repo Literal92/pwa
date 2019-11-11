@@ -1,0 +1,41 @@
+<notifier-container></notifier-container>
+<div class="select_date">
+    <ul>
+        <li *ngFor="let item of weekDate; index as i">
+            <a (click)="activate(item,i)" class="link-{{item}}" [ngClass]="{' active': i === 0}">{{item}}</a>
+        </li>
+        <!-- <li>
+            <a href="#Wed" (click)="activate()" class="active">Wed</a>
+        </li>
+        <li>
+            <a href="#Thu" (click)="activate()">Thu</a>
+        </li>
+        <li>
+            <a href="#Fri" (click)="activate()">Fri</a>
+        </li> -->
+    </ul>
+</div>
+
+<div class="instructional_fields">
+    <div class="container">
+        <div class="instructional" *ngFor="let item of instroductional$; index as i"  [routerLink]="['/workshops', item.id]">
+            <a>
+                <p class="instructional_title">{{ item.title }}</p>
+            </a>
+            <div class="instructional_details">
+                <div class="row">
+                     <div class="col-6 room text-left">
+                        <img src="../../assets/icons/Telegram Archive (4)/location.svg" alt="">
+                        <p class="lecture_hall">{{item.location}}</p>
+                    </div>
+                    <div class="col-6 date text-left">
+                        <span>{{item.week}}</span>
+                        <span>|</span>
+                        <span>{{item.start}} - {{item.end}}</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

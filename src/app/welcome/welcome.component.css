@@ -1,0 +1,38 @@
+div.welcome_field{
+  background: #e0e0e0;
+  margin-top: 70px;
+}
+div.container{
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+}
+div.main_text_field{
+  margin-bottom: 10px
+}
+.main_text_field span{
+  color:#012c3d;
+  font-weight: bold;
+  direction: ltr
+}
+.main_text_field p#main_text{
+  color: #012c3d;
+  text-align: justify;
+  line-height: 2em;
+  padding: 10px 0px;
+  font-size: 14px;
+}
+#caption_text{
+  padding: 10px 0px;
+  color: #012c3d;
+  text-align: left;
+  font-weight: bold;
+}
+#director_name{
+  padding: 10px 0px;
+  color: #012c3d;
+  font-weight: bold;
+}
+#director_job{
+  color: #012c3d
+}

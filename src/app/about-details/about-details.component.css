@@ -1,0 +1,40 @@
+
+.place_details{
+  margin: 20px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  padding: 15px 0px;
+  margin-top: 60px;
+}
+.place_details img{
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.place_details p.description{
+  margin: 20px 0px;
+  color: #a4a4a4;
+  font-size: 14px;
+  text-align: justify;
+  direction: ltr !important;
+}
+.place_details p.description ul{
+  text-align: left !important;
+}
+p.description ul li span{
+  direction: ltr !important;
+}
+.address{
+  margin: 20px 0px;
+  direction: ltr;
+}
+.address img{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.address span{
+  font-size: 13px;
+}

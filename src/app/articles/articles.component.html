@@ -1,0 +1,41 @@
+<notifier-container></notifier-container>
+<div class="select_cat">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 text-center">
+                <a (click)="activate('Poster')" class="item-Poster">Poster</a>
+            </div>
+            <div class="col-6 text-center">
+                <a (click)="activate('Oral')" class="item-Oral active">Oral</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="abstracts_field">
+    <div class="container">
+        <div class="abstract" *ngFor="let article of articles ;index as abstractId"  [routerLink]="['/articlesDetail', article.id, id]"  [ngClass]="{'show_none': article.type == 'poster'}">
+          <div *ngFor="let item of article.author">
+            <p class="abstract_name" *ngIf="item.presenter == true">{{ item.name }}</p>
+          </div>
+            <a>
+                <p class="abstract_title">{{article.title}}
+                </p>
+            </a>
+
+            <div class="abstract_details">
+                <div class="row">
+
+                    <div class="col-6 room text-left">
+                        <img src="../../assets/icons/Telegram Archive (4)/location.svg" alt="">
+                        <p class="abstract_hall">{{article.location}}</p>
+                    </div>
+                    <div class="col-6 date text-left" >
+                        <span>{{article.week}}</span>
+                        <span>|</span>
+                        <span>{{article.start}} - {{article.end}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

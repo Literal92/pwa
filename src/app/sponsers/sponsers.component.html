@@ -1,0 +1,24 @@
+<div class="sponsors_list">
+  <div class="container">
+    <div class="sponsor" *ngFor="let item of sponsor$">
+      <div class="row">
+        <div class="col-3">
+          <img src="{{pic}}{{item.logo}}" alt="">
+        </div>
+        <div class="col-9">
+          <div class="sponsor_details">
+            <p class="sponsor_name" (click)="getId(item.exhibitionId)">{{item.title}}</p>
+            <p class="sponsor_co">{{item.description}}</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="sponsor_type">
+        <span [ngClass]="{'gold':item.type === 'gold',
+        'silver':item.type === 'silver',
+        'bronze':item.type === 'bronze'}">{{item.type}}</span>
+        <span class="dote"></span>
+      </div>
+    </div>
+  </div>
+</div>

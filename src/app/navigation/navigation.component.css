@@ -1,0 +1,15 @@
+.flex-center{
+  width: 100vw;
+  height:  calc(100vh - 70px);
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.flex-center a{
+  text-align: center;
+  color: #000;
+}

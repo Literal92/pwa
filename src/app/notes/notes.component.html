@@ -1,0 +1,14 @@
+<div class="note_list" >
+  <div class="container" *ngFor="let item of NoteList"  >
+    <div class="note"  [routerLink]="['/AddNote',item.id]">
+      <p class="note_cat" *ngIf="item.type != undefined && item.type != 0">{{item.type}}</p>
+      <p class="note_title" >{{item.title}}</p>
+      <p class="note_summry">{{item.desc}}</p>
+
+    </div>
+  </div>
+</div>
+<div class="float-right">
+  <a [routerLink]="['/AddNote',0]" routerLinkActive="router-link-active"><span class="plus">+</span></a>
+</div>
+

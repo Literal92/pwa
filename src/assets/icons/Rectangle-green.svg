@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="2px" viewBox="0 0 48 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Rectangle-green</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-280.000000, -279.000000)" fill="#09B958">
+            <path d="M280.036216,279 L327.963784,279 C327.983785,279 328,279.016215 328,279.036216 L328,279.036216 C328,279.056799 327.984437,279.074048 327.963963,279.076159 C317.229195,280.182852 309.241207,280.736204 304,280.736204 C298.758793,280.736204 290.770805,280.182852 280.036038,279.076149 L280.036037,279.076159 C280.015563,279.074048 280,279.056799 280,279.036216 L280,279.036216 C280,279.016215 280.016215,279 280.036216,279 Z" id="Rectangle-green"></path>
+        </g>
+    </g>
+</svg>

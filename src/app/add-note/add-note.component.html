@@ -1,0 +1,11 @@
+<div class="p-4">
+  <form>
+    <div class="save_data">
+      <button type="submit" (click)="saveText(title.value,desc.value)">Save Note</button>
+    </div>
+    <div class="form-group">
+      <input class="input-note" value="{{titleNote}}" #title placeholder="Title" />
+    </div>
+    <textarea class="txt-note" value="{{descNote}}" #desc placeholder="Write your note here"></textarea>
+  </form>
+</div>

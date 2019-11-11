@@ -1,0 +1,21 @@
+.search_results{
+  margin: 20px 0px;
+  margin-top: 70px;
+}
+.result{
+  padding: 15px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+}
+.type{
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.title{
+  font-size: 13px;
+  color: #a4a4a4;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,27 @@
+<notifier-container></notifier-container>
+<div class="container main_container">
+    <div class="booth" *ngFor="let item of booth$;index as boothId" [routerLink]="['/booths', item.id]">
+        <div class="booth_header">
+            <div class="row">
+
+
+                <div class="col-4">
+                    <img src={{item.image}} alt="">
+                </div>
+                <div class="col-8">
+                    <div>
+                        <a><p class="booth_name">{{item.title}}</p></a>
+                        <p class="booth_manager">Manager: {{item.manager}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="booth_room">
+            <img src="../../assets/icons/Telegram Archive (4)/location.svg" alt="">
+            <span>{{item.location}}</span>
+        </div>
+    </div>
+
+</div>

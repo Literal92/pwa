@@ -1,0 +1,19 @@
+<notifier-container></notifier-container>
+<div class="events_list">
+  <div class="container">
+    <div class="event_simple" *ngFor="let item of events$;index as eventId">
+      <p class="type">{{ item.type }}</p>
+      <p class="title" (click)="sendType(item.type, item.id)" [routerLink]="['/item.type']">{{item.title}}</p>
+      <div class="room">
+          <span>{{ item.location }}</span>
+          <img src="../../assets/icons/Telegram Archive (4)/location.svg" alt="">
+  
+        </div>
+      <div class="time">
+        <img src="" alt="">
+        <span>{{item.startDate.date | date:'HH:mm'}}</span>
+      </div>
+      
+    </div>
+  </div>
+</div>

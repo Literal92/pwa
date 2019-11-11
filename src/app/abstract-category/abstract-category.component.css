@@ -1,0 +1,31 @@
+@font-face {
+	font-family: cairo;
+	src: url("../../assets/fonts/Cairo-Regular.ttf");
+}
+*{
+    font-family: "cairo" !important;
+}
+
+.abstract_category{
+  margin: 20px 0px;
+  padding-top: 50px;
+}
+.cat{
+  padding: 15px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.cat a{
+  color: #012C3D;
+  font-weight: bold;
+  font-size: 14px;
+}
+.cat img{
+  float: right;
+  position: relative;
+  top: 5px;
+  transform: rotate(180deg);
+}

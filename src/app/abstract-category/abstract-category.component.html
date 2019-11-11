@@ -1,0 +1,15 @@
+<notifier-container></notifier-container>
+<div class="abstract_category">
+  <div class="container" *ngFor="let item of abstractCat">
+    <div class="cat" (click)="onClick(item.id)">
+      <a [routerLink]="['/articlesList']">{{item.title}}</a>
+      <img src="../../assets/icons/angle.svg" alt="">
+    </div>
+    <!-- <div class="cat">
+      <a [routerLink]="['/articlesList']">Cornea & Anterior Segment</a>
+    </div>
+    <div class="cat">
+      <a [routerLink]="['/articlesList']">Cornea & Anterior Segment</a>
+    </div> -->
+  </div>
+</div>

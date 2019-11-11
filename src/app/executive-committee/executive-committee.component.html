@@ -1,0 +1,20 @@
+<notifier-container></notifier-container>
+<div class="container main_container">
+    <div *ngFor="let item of executive$" class="executive_card">
+        <div class="row">
+            <div class="col-4">
+                <div class="executive_card_img">
+                    <img src="{{photo + item.picture }}" alt="">
+                </div>
+            </div>
+            <div class="col-8 text-left">
+                <div class="executive_details">
+                    <span class="name">{{ item.name }}</span>
+                    <span class="job">{{ item.position }}</span>
+                    <span id="dote"></span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

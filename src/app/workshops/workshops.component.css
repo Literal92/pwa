@@ -1,0 +1,79 @@
+@font-face {
+	font-family: cairo;
+	src: url("../../assets/fonts/Cairo-Regular.ttf");
+}
+*{
+    font-family: "cairo" !important;
+}
+.instructional_fields{
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+.instructional_fields .instructional{
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+
+}
+.instructional .instructional_title{
+  font-weight: bold;
+  color: #012C3D;
+  font-size: 13px;
+}
+.instructional_details .room img{
+  width: 20px;
+}
+.instructional_details .room p{
+  display: inline-block;
+  color: #767676;
+  font-size: 13px;
+  float: right;
+  position: relative;
+  top: 3px;
+  right: 60px;
+}
+.instructional_details .date{
+  direction: ltr;
+}
+.instructional_details .date span{
+  color: #a4a4a4;
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 0px 3px;
+  direction: ltr;
+  font-size: 13px;
+}
+.select_date{
+  background: linear-gradient(to right, #084a64, #077391, #064d69);
+  padding-top: 10px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 50px;
+  z-index: 10000;
+}
+.select_date ul{
+  padding: 0 20px;
+  width: 100%;
+  direction: ltr;
+  margin-bottom:0 ;
+}
+.select_date ul li{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+.select_date ul li a{
+  color: #a4a4a4;
+  display: block;
+  border-bottom: 1px solid #064d69;
+}
+.select_date ul li a.active{
+  color: #ffffff;
+  display: block;
+  border-bottom: 1px solid #fff;
+}

@@ -1,0 +1,143 @@
+@font-face {
+	font-family: cairo;
+	src: url("../../assets/fonts/Cairo-Regular.ttf");
+}
+* {
+	font-family: "cairo" !important;
+}
+header.main_header {
+	background: linear-gradient(to right, #084a64, #077391, #064d69);
+	padding: 15px 5px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 10000;
+}
+/* nav.main-nav{
+    background: linear-gradient(to right, #084a64, #077391, #064d69);
+} */
+nav.main-nav #nav_menu {
+	display: inline-block;
+}
+nav.main-nav #main_title {
+	display: inline-block;
+}
+nav.main-nav #main_title h1 {
+	color: #ffffff;
+	font-weight: normal;
+	position: relative;
+	top: 3px;
+	direction: ltr;
+}
+.nav_items {
+	display: none;
+	text-align: left;
+	position: absolute;
+	top: 0;
+	left: 0 !important;
+	bottom: 0;
+	width: 100%;
+	height: 100% !important;
+	background: rgba(0, 0, 0, .6);
+	overflow-y: hidden !important;
+	z-index: 20000;
+}
+.nav_items #close_btn {
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+	width: 26px;
+}
+.nav_items ul {
+	background: #fff;
+	height: 100%;
+	width: 80%;
+	padding: 20px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	float: left;
+	overflow-y: auto;
+}
+.nav_items ul li {
+	list-style-type: none;
+	padding: 15px 0px;
+}
+.nav_items ul li .nav_image {
+	padding: 5px;
+	margin-right: 10px;
+	background: #f8f7f3;
+	display: inline-block;
+	float: left;
+	border-radius: 5px;
+}
+.nav_items ul li img {
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-right: 15px;
+}
+.nav_items ul li a {
+	color: #444;
+	font-size: 1em;
+	cursor: pointer;
+	position: relative;
+	top: 5px;
+	text-decoration: none;
+}
+.nav_items ul li ul {
+	padding: 5px 40px;
+    display: block;
+    float: unset;
+    width: 100%;
+}
+.nav_items ul li ul li {
+	padding: 10px 0px;
+}
+.nav_items ul li ul a {
+	color: #737373;
+}
+.nav_items ul li span {
+	float: right;
+	color: #a6a6a6;
+	font-family: Tahoma;
+	position: relative;
+	top: 5px;
+}
+.nav_items ul li span img {
+	width: 8px !important;
+	transform: rotate(180deg);
+}
+.open_nav {
+	display: block;
+	transition: all .5s;
+}
+@media (max-width: 600px) {
+	nav.main-nav #main_title h1 {
+		font-size: 1em;
+		font-weight: normal;
+	}
+}
+.search_icon img {
+	width: 20px;
+}
+#BtnPodcastHeader svg path {
+	fill: oldlace;
+}
+
+/* .special > a::after {
+	content: url('../../assets/icons/angle.svg');
+	float: right;
+} */
+.open_congress{
+    float: right !important;
+    width: 15px !important;
+    height: 15px !important;
+    position: relative;
+		bottom: 15px;
+		left: 10px;
+    transform: rotate(180deg);
+}
+.special > a {
+    display: block !important;
+    z-index: 100000 !important;
+}

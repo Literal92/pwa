@@ -1,0 +1,28 @@
+div.map_plan {
+  margin: 20px 0 20px 20px;
+  overflow: auto;
+  height:100vh;
+  position: relative;
+}
+
+.map_plan img {
+  width: 100%;
+  height: auto;
+  z-index: -10;
+  margin-top: 60px;
+}
+
+
+.option{
+  position: fixed;
+  bottom: 60px;
+  left: 20px;
+}
+.img-tive-min {
+  width: 40px;
+  display: block;
+}
+.img-tive-max{
+  width: 40px;
+  display: block;
+}

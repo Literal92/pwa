@@ -1,0 +1,40 @@
+<div class="select_date" *ngIf="child === false">
+    <ul >
+        <li *ngFor="let item of weekDate; index as i">
+            <a class="link-{{item}}" (click)="activate(item, i)" [ngClass]="{' active': i === 0}">{{item}}</a>
+        </li>
+        <!-- <li>
+            <a href="/lecture#Wed" (click)="activate('Wed')">Wed</a>
+        </li>
+        <li>
+            <a href="/lecture#Thu" (click)="activate('Thu')">Thu</a>
+        </li>
+        <li>
+            <a href="/lecture#Fri" (click)="activate('Fri')">Fri</a>
+        </li> -->
+    </ul>
+</div>
+<div class="container main_container" *ngIf="child === false">
+    <div class="lecture" *ngFor="let lecture of list; index as lectureId"  [routerLink]="['/lecture', lecture.id]">
+      <!-- <div class="lecture" *ngFor="let lecture of list; index as lectureId"  (click)="onLec(lecture.id)"> -->
+        <p class="lecture_title">{{ lecture.upTitle }}</p>
+        <a>
+          <p class="lecture_description">{{ lecture.title }}</p>
+        </a>
+        <div class="lecture_details">
+            <div class="row">
+                <div class="col-5 room text-left">
+                    <img src="../../assets/icons/Telegram Archive (4)/location.svg" alt="">
+                    <p class="lecture_hall">{{lecture.location}}</p>
+                </div>
+                <div class="col-7 date text-left">
+                    <span>{{lecture.week}}</span>
+                    <span>|</span>
+                    <span>{{lecture.start}} - {{lecture.end}}</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<app-lecture-details [dataChild]="dataChild" (parent)="backToParent($event)" *ngIf="child === true"></app-lecture-details>

@@ -1,0 +1,25 @@
+<div class="abstracts_field">
+  <div class="container">
+      <div class="abstract" *ngFor="let item of list ;index as abstractId">
+          <p class="abstract_name">{{ item.title }}</p>
+          <a [routerLink]="['/mapPlan/', item.id]">
+              <p class="abstract_title">View Map
+              </p>
+          </a>
+
+          <!-- <div class="abstract_details">
+              <div class="row">
+                  <div class="col-6 date text-left">
+                      <span>{{article.startDate.date | date:'EEE'}}</span>
+                      <span>|</span>
+                      <span>{{article.startDate.date | date:'HH:mm'}} - {{article.endDate.date | date:'HH:mm'}}</span>
+                  </div>
+                  <div class="col-6 room text-left">
+                      <p class="abstract_hall">{{article.location}}</p>
+                      <img src="../../assets/icons/Telegram Archive (4)/location.svg" alt="">
+                  </div>
+              </div>
+          </div> -->
+      </div>
+  </div>
+</div>

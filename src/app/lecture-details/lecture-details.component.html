@@ -1,0 +1,80 @@
+<notifier-container></notifier-container>
+<div class="lecture_details_field" *ngIf="list != undefined">
+  <div class="container base_container">
+    <div >
+        <p class="detail_name">{{ list.upTitle }}</p>
+        <p class="detail_title">{{ list.title }}</p>
+        <div class="details_btn">
+          <div class="row">
+
+            <div class="col-6">
+              <button class="add_note" [routerLink]="['/AddNote/lecture : '+ list.title]">Add Note</button>
+            </div>
+            <div class="col-6">
+              <button class="show_note" [routerLink]="['/notes']">Show Notes</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="booth_rating">
+          <div style="background: #fff;border-radius: 50px " >
+            <span class="title">Your Score :</span>
+            <star-rating value="{{myScore}}" checkedcolor="gold" uncheckedcolor="gray" size="25px" readonly="false"
+               (rate)="ratingClick($event,id)"></star-rating>
+          </div>
+        </div>
+
+        <div class="booth_rating" *ngIf="list.rating != 0">
+          <div style="background: #fff;border-radius: 50px " >
+            <span class="title">Average :</span>
+            <star-rating value="{{list.rating.toFixed(0)}}" checkedcolor="gold" uncheckedcolor="gray" size="25px"
+              readonly="true"></star-rating>
+          </div>
+        </div>
+        <div class="lecture_date">
+          <div class="row">
+
+            <div class="col-6 day">
+                <span>{{list.week}}</span>
+                <span>|</span>
+                <span>{{list.day}} {{list.month}}</span>
+              </div>
+              <div class="col-6 time">
+                <span>{{list.start}}</span>
+                <span> - </span>
+                <span>{{list.end}}</span>
+              </div>
+          </div>
+        </div>
+        <div class="lecture_room">
+          <img src="../../assets/icons/Telegram Archive (4)/location.svg" alt="">
+          <p>{{list.location}}</p>
+        </div>
+
+        <div class="rank">
+
+        </div>
+        <div class="speakers">
+          <h3>Moderator</h3>
+           <ul *ngFor="let item of list.moderator; index as i"> <!--*ngFor="let item of lecture.moderator; index as i" -->
+            <li>{{item}}</li>
+          </ul>
+        </div>
+
+    </div>
+
+  </div>
+</div>
+<div class="topic_list" *ngFor="let item of list.topic" >
+  <div class="container" >
+      <p class="topic_title">{{item.title}}</p>
+      <div class="speakers" *ngFor="let itemm of item.speaker; index as i">
+        <p>{{itemm}}</p>
+      </div>
+      <div class="topic_time">
+        <span>{{item.startT}}</span>
+        <span>-</span>
+        <span>{{item.endT}}</span>
+      </div>
+  </div>
+</div>

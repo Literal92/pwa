@@ -1,0 +1,85 @@
+[
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "Home",
+    "route": ""
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "Schedule",
+    "route": "time"
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "Lecture",
+    "route": "lecture"
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "Abstracts",
+    "route": "article"
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "Instructional Courses",
+    "route": "workshop"
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "Exhibition",
+    "route": "booths"
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "list":[
+      {"name": "Scientific Committee", "route": "Scientific"},
+      {"name": "Executive Committee", "route": "Executive"},
+      {"name": "Welcome", "route": "Welcome"}
+    ],
+    "name": "Congress Structure",
+    "route": "navigation"
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "Navigation The Venue",
+    "route": "map"
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "Venue Map",
+    "route": "mapPlan"
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "My Notes",
+    "route": "notes"
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "Current Events",
+    "route": "events"
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "Sponsors",
+    "route": "sponsor"
+  },
+  {
+    "img": "http://khabarfoori.com/bundles/Final2Bundle/images/google-play.png",
+    "linksNum": "",
+    "name": "About Mashhad",
+    "route": "about"
+  }
+]

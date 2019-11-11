@@ -1,0 +1,42 @@
+.booth{
+  margin: 20px 0px;
+  padding: 15px 0px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+}
+.booth_header{
+  padding: 0px 20px;
+}
+
+.booth_header img{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  bottom: 10px;
+  border-radius: 5px;
+}
+.booth_header a{
+  color: #012C3D;
+}
+.booth_header .booth_name{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.booth_header .booth_manager{
+  font-size: 14px;
+  color: #a4a4a4;
+  margin-bottom: 0;
+}
+.booth_room{
+  padding: 0px 15px;
+}
+.booth_room span{
+  color: #a4a4a4;
+  font-size: 13px;
+  margin-left: 5px;
+}
+.main_container{
+  margin-top: 70px;
+}

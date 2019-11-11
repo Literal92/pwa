@@ -1,0 +1,107 @@
+.width {
+  width: auto;
+}
+.lecture{
+  margin: 20px 0px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.lecture img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.lecture p{
+  font-size: 13px;
+  text-align: justify;
+  line-height: 2em;
+  direction: ltr;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.lecture span{
+  display: block;
+  padding: 10px 0px;
+  font-size: 14px;
+  color: #77bdc4;
+}
+.lecture_title{
+  color: #a4a4a4;
+}
+.lecture_description{
+  font-weight: bold;
+  color: #012c3d;
+}
+
+.lecture_details{
+  margin-top: 20px;
+}
+.lecture_details div.room p{
+  margin-left: 10px;
+  display: inline-block;
+  color: #a4a4a4
+}
+.lecture_details div.room img{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  float: left;
+  position: relative;
+  top: 3px;
+}
+.lecture_details div.date{
+  direction: ltr;
+}
+.lecture_details div.date span{
+  color: #a4a4a4;
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 0px 3px;
+  direction: ltr;
+}
+
+.select_date{
+  background: linear-gradient(to right, #084a64, #077391, #064d69);
+  padding-top: 10px;
+  position: fixed;
+  top:50px;
+  right:0 ;
+  left: 0;
+  z-index: 10000;
+}
+.select_date ul{
+  padding: 0 20px;
+  width: 100%;
+  direction: ltr;
+  margin-bottom: 0;
+}
+.select_date ul li{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+.select_date ul li a{
+  color: #a4a4a4;
+  display: block;
+  border-bottom: 1px solid #064d69;
+}
+.select_date ul li a.active{
+  color: #ffffff;
+  display: block;
+  border-bottom: 1px solid #fff;
+}
+.container{
+  padding-top: 100px;
+}
+.image-fixed{
+  width: 35px;
+  position: fixed;
+  height: auto;
+}
+.widthh {
+  width: 200vw;
+}

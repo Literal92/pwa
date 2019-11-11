@@ -1,0 +1,108 @@
+
+<notifier-container></notifier-container>
+<div class="container">
+  <div class="input_fields">
+    <form (submit)="onSearch(search.value)">
+    <input type="text" #search placeholder="Lectures, Articles, Instructional...">
+    <button>
+      <img src="../../assets/icons/search.svg" alt="">
+    </button>
+  </form>
+  </div>
+  <div class="item_fields">
+    <div class="row">
+      <div class="col-3 text-center">
+        <a routerLink="timeSchedule">
+          <div class="item green_field">
+            <img src="../../assets/icons/calendar%20(2).svg" alt="">
+          </div>
+          <h2>Schedule</h2>
+        </a>
+      </div>
+      <div class="col-3 text-center">
+        <a routerLink="workshops">
+          <div class="item yellow_field">
+            <img src="../../assets/icons/presentation%20(1)%20copy.svg" alt="">
+          </div>
+          <h2>Instructional Courses</h2>
+        </a>
+      </div>
+      <div class="col-3 text-center">
+        <a routerLink="lecture">
+          <div class="item blue_field">
+            <img src="../../assets/icons/conference.svg" alt="">
+          </div>
+          <h2>Lectures</h2>
+        </a>
+      </div>
+      <div class="col-3 text-center">
+        <a routerLink="articles">
+          <div class="item green_field">
+            <img src="../../assets/icons/document.svg" alt="">
+          </div>
+          <h2>Articles</h2>
+        </a>
+      </div>
+      <div class="col-3 text-center">
+        <a routerLink="navigation">
+          <div class="item green_field">
+            <img src="../../assets/icons/Telegram%20Archive%20(4)/destination.svg" alt="">
+          </div>
+          <h2>Navigation</h2>
+        </a>
+      </div>
+      <div class="col-3 text-center">
+        <a routerLink="notes">
+          <div class="item yellow_field">
+            <img src="../../assets/icons/Telegram%20Archive%20(4)/task.svg" alt="">
+          </div>
+          <h2>Notes</h2>
+        </a>
+      </div>
+      <div class="col-3 text-center">
+        <a routerLink="booths">
+          <div class="item blue_field">
+            <img src="../../assets/icons/Telegram%20Archive%20(4)/booth.svg" alt="">
+          </div>
+          <h2>Exhibition</h2>
+        </a>
+      </div>
+      <div class="col-3 text-center">
+        <a routerLink="mapPlan">
+          <div class="item green_field">
+            <img src="../../assets/icons/Telegram%20Archive%20(4)/location.svg" alt="">
+          </div>
+          <h2>Venue Map</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="voting_fields">
+    <a routerLink="voting">
+      <span>Voting</span>
+      <img src="../../assets/icons/angle.svg" alt="">
+    </a>
+  </div>
+  <div class="on_performing_fields">
+    <div class="on_performing_title">
+      <h3>Right Now</h3>
+    </div>
+    <div class="row">
+      <div class="col-6" *ngFor="let item of events$">
+        <div class="perform_field">
+          <img src="../../assets/icons/27303.jpg" alt="">
+          <div class="perform_details">
+            <span class="category_name">{{item.type}}</span>
+            <span class="perform_time">{{item.startDate.date | date:'HH:mm'}}</span>
+            <a>
+              <h5 (click)="sendType(item.type, item.id)">{{item.title}}</h5>
+            </a>
+            <p class="room_name">{{item.location}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

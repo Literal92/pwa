@@ -1,0 +1,78 @@
+<notifier-container></notifier-container>
+<div class="abstract_details">
+  <div class="container">
+    <div class="type">
+
+      <div class="">
+        <p>{{abstract.title}}</p>
+      </div>
+
+    </div>
+    <div class="time" [ngClass]="{'show_none': abstract.type == 'poster'}">
+      <div class="row">
+
+
+        <div class="col-6">
+          <span>{{abstract.week}}</span>
+          <span>|</span>
+          <span>{{abstract.day}} {{abstract.month}}</span>
+        </div>
+        <div class="col-6">
+          <span>{{abstract.start}}</span>
+          <span>-</span>
+          <span>{{abstract.end}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="room">
+      <img src="../../assets/icons/Telegram Archive (4)/location.svg" alt="">
+      <span>{{abstract.location}}</span>
+    </div>
+    <div class="article_btn">
+      <div class="row">
+
+        <div class="col-6">
+          <button class="add" [routerLink]="['/AddNote/abstract : '+ abstract.title]">Add Note</button>
+        </div>
+        <div class="col-6">
+          <button class="show" [routerLink]="['/notes']">Show Notes</button>
+        </div>
+      </div>
+    </div>
+    <div class="rating">
+      <div style="background: #fff;border-radius: 50px " > <span class="title">Your Score : </span>
+        <star-rating value="{{myScore}}" checkedcolor="gold" uncheckedcolor="gray" size="25px" readonly="false" (rate)="ratingClick($event,id)"></star-rating>
+      </div>
+    </div>
+    <div class="rating" *ngIf="abstract.rating != 0">
+      <div style="background: #fff;border-radius: 50px " >
+        <span class="title">Average :</span>
+        <star-rating value="{{abstract.rating.toFixed(0)}}" checkedcolor="gold" uncheckedcolor="gray" size="25px"
+          readonly="true"></star-rating>
+      </div>
+    </div>
+    <div class="authors">
+      <h4>Authors</h4>
+      <ul class="authors_list show_more_list">  <!-- *ngFor="let item of authors.author" -->
+        <li *ngFor="let item of abstract.author;index as i" [ngClass]="{'first_author': item.presenter == true}">{{item.name}}</li>
+        <a class="more" *ngIf="abstract.author.length > 2" (click)="showMoree()">Show More</a>
+        <a class="less" *ngIf="abstract.author.length > 2"  (click)="showLesss()">Show less</a>
+      </ul>
+
+    </div>
+    <div class="affliation">
+      <h4>affiliation</h4>
+      <p>
+        {{abstract.affiliation}}
+      </p>
+    </div>
+    <div class="abstracts">
+      <h4>abstracts</h4>
+      <p [innerHtml]="abstract.description" class="abstract_text"></p>
+      <a class="moretext_btn" (click)="ShowMoreText()">Show More</a>
+      <a class="lesstext_btn" (click)="ShowLessText()">Show Less</a>
+    </div>
+  </div>
+</div>
+
+

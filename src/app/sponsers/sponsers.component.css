@@ -1,0 +1,67 @@
+.sponsors_list{
+  margin: 20px 0px;
+  margin-top: 70px;
+}
+.sponsor{
+  padding: 15px;
+  position: relative;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+}
+.sponsor img{
+  max-width: 100%;
+  height: auto;
+  /* border-radius: 50%; */
+  position: relative;
+  object-fit: cover;
+}
+.sponsor_details{
+  padding-top: 5px;
+}
+.sponsor_name{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #012C3D;
+}
+.sponsor_co{
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #a4a4a4;
+}
+.sponsor_type{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 11px;
+}
+.sponsor_type .dote{
+  width: 10px;
+  height: 10px;
+  background: #a4a4a4;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+  margin-left: 5px;
+
+}
+.gold{
+  color: #EEBC51;
+}
+.gold + .dote{
+  background: #EEBC51;
+}
+.silver{
+  color: #ADAEAE;
+}
+.silver + .dote{
+  background: #ADAEAE;
+}
+.bronze{
+  color: #CB8E64;
+}
+.bronze + .dote{
+  background: #CB8E64;
+}

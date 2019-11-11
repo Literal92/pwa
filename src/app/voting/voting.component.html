@@ -1,0 +1,96 @@
+<notifier-container></notifier-container>
+<div class="questions_list ">
+  <div class="container">
+    <button class="Howtovote" (click)="openHow()">How to Vote</button>
+    <div class="question_list "  *ngFor="let item of VoteList$">
+        <div class="question" [ngClass]="{'disable_question': item.answered == true}">
+          <p class="name" >{{item.pollCode}}</p>
+          <div class="answer_link">
+            <button (click)="openModal(item.count,item.pollCode)" [disabled]="item.answered">Answer</button>
+          </div>
+          <div class="time">
+            <span>{{item.date.date.replace(' ','T') | date:'EEEE'}}</span>
+            <span>|</span>
+            <span>{{item.date.date.replace(' ','T') | date:'HH:mm'}}</span>
+          </div>
+
+        </div>
+        <div class="answers_field">
+            <div class="answer_modal">
+              <p class="name">Question {{id}}
+              </p>
+              <p class="code_number"><span>Code :</span><span>{{pollCode}}</span></p>
+              <input class="passCode" type="text" #passCode placeholder="Enter Pass Code ...">
+              <div  class="answers">
+                <div class="row" (keypress)="onBlur(passCode.value)">
+
+                  <div class="col-6 answer_field mb-3">
+                    <input type="radio" id="q2" name="answer" class="answer_radio">
+                    <button  class="btn btn-default"
+                    mwlConfirmationPopover
+                    [popoverTitle]="popoverTitle"
+                    [popoverMessage]="popoverMessage"
+                    placement="top"
+                    (confirm)="onConfirm(1,pollCode,id,passCode.value);passCode.value=''"
+                    (cancel)="cancelClicked = true" ><label for="q2">1</label></button>
+                  </div>
+                  <div class="col-6 answer_field mb-3">
+                    <input type="radio" id="q1" name="answer" class="answer_radio" >
+                    <button  class="btn btn-default"
+                    mwlConfirmationPopover
+                    [popoverTitle]="popoverTitle"
+                    [popoverMessage]="popoverMessage"
+                    placement="top"
+                    (confirm)="onConfirm(2,pollCode,id,passCode.value);passCode.value=''"
+                    (cancel)="cancelClicked = true" ><label for="q1">2</label></button>
+                  </div>
+
+                  <div class="col-6 answer_field mb-3">
+                    <input type="radio" id="q4" name="answer" class="answer_radio">
+                    <button  class="btn btn-default"
+                    mwlConfirmationPopover
+                    [popoverTitle]="popoverTitle"
+                    [popoverMessage]="popoverMessage"
+                    placement="top"
+                    (confirm)="onConfirm(3,pollCode,id,passCode.value);passCode.value=''"
+                    (cancel)="cancelClicked = true"><label for="q4">3</label></button>
+                  </div>
+                  <div class="col-6 answer_field mb-3">
+                    <input type="radio" id="q3" name="answer" class="answer_radio" >
+                    <button  class="btn btn-default"
+                    mwlConfirmationPopover
+                    [popoverTitle]="popoverTitle"
+                    [popoverMessage]="popoverMessage"
+                    placement="top"
+                    (confirm)="onConfirm(4,pollCode,id,passCode.value);passCode.value=''"
+                    (cancel)="cancelClicked = true"><label for="q3">4</label></button>
+                  </div>
+                </div>
+
+                <div class="row center-item">
+                  <br/>
+                  <button class="answer_field btn btn-gray col-10" (click)="closeModal();passCode.value=''">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<div class="how_field">
+  <div class="how-modal">
+      <p class="name">Voting Instructions
+      </p>
+      <p>
+        <b>Step 1 : </b><span>click over an item of the current list</span><br>
+        <b>Step 2 : </b><span>Read the password from pressention monitor and insert it into pass-code field</span><br>
+        <b>Step 3 : </b><span>choose an answer (between 1 to 4) and confirm it</span><br>
+      </p>
+      <button class="hows_field btn btn-gray col-12" (click)="closeHow()">
+          Cancel
+      </button>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icon/search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-40.000000, -109.000000)" fill-rule="nonzero" stroke="#ffffff" stroke-width="2">
+            <g id="icon/search" transform="translate(36.000000, 106.000000)">
+                <path d="M12.0654268,15.9277913 L12.9111111,16.0598759 L12.9111111,20.2277778 C12.9111111,20.2768698 12.950908,20.3166667 13,20.3166667 C13.049092,20.3166667 13.0888889,20.2768698 13.0888889,20.2277778 L13.0888889,16.0598759 L13.9345732,15.9277913 C16.8334559,15.4750247 19,12.9659596 19,10 C19,6.6862915 16.3137085,4 13,4 C9.6862915,4 7,6.6862915 7,10 C7,12.9659596 9.16654405,15.4750247 12.0654268,15.9277913 Z" id="Oval" transform="translate(13.000000, 12.158333) rotate(-44.000000) translate(-13.000000, -12.158333) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

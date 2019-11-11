@@ -1,0 +1,127 @@
+@font-face {
+	font-family: cairo;
+	src: url("../../assets/fonts/Cairo-Regular.ttf");
+}
+*{
+    font-family: "cairo" !important;
+}
+.course_details{
+  margin: 20px;
+  padding: 15px 0px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  margin-top: 70px;
+}
+.course_details .course_title{
+  font-weight: bold;
+  font-size: 14px;
+}
+.course_details .course_button{
+  margin: 20px 0px
+}
+.course_button .add_note button{
+  padding: 5px 0px;
+  background: #ffb71c;
+  border:2px solid #ffb71c;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #fff;
+  width: 100%;
+}
+.course_button .show_notes button{
+  padding: 5px 0px;
+  width: 100%;
+  background: #fff;
+  border:2px solid #ffb71c;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #ffb71c;
+}
+.course_details .date{
+  padding: 5px 10px;
+  margin: 20px 0px;
+  background: rgba(255, 183, 28, .2);
+  border-radius: 5px;
+  font-size: 13px;
+  direction: ltr;
+  font-family: sans-serif;
+}
+.course_details .date span{
+  padding:0 2px;
+}
+.course_details .room span{
+  color: #ffb71c;
+  font-size: 13px;
+  margin-left: 5px;
+}
+.course_lecture_fields {
+  margin: 20px;
+}
+.course_lecture_fields .lecture{
+  margin: 20px -15px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  padding: 15px 10px ;
+}
+.lecture .title{
+  font-size: 13px;
+  color: #012c3d;
+}
+.lecture .name{
+  color: #a4a4a4;
+  font-size: 13px;
+}
+.lecture .time{
+  text-align: right;
+  direction: ltr;
+  font-size: 13px;
+  font-family: sans-serif;
+  margin-bottom: 0;
+}
+
+.rating{
+  direction: ltr;
+  margin-top: 15px;
+}
+.rating star-rating{
+  float: right;
+  position: relative;
+  bottom: 5px;
+}
+.rating star-rating span{
+  direction: ltr;
+}
+.speakers{
+  margin-top: 30px;
+}
+.speakers p{
+  color: #767676;
+  font-size: 13px;
+}
+.speakers ul{
+  padding-left: 10px;
+}
+.speakers ul li{
+  list-style-type: none;
+  font-size: 13px;
+  color: #a4a4a4;
+}
+.speakers h3{
+  font-size: 14px;
+  color: #012c3d;
+  overflow: hidden;
+  direction: rtl;
+}
+.speakers h3::before{
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #767676;
+  margin-right: -100%;
+  position: relative;
+  bottom: 3px;
+  left :10px;
+  }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="2px" viewBox="0 0 48 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Rectangle-red</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-115.000000, -279.000000)" fill="#F7444F">
+            <path d="M115.036216,279 L162.963784,279 C162.983785,279 163,279.016215 163,279.036216 L163,279.036216 C163,279.056799 162.984437,279.074048 162.963963,279.076159 C152.229195,280.182852 144.241207,280.736204 139,280.736204 C133.758793,280.736204 125.770805,280.182852 115.036038,279.076149 L115.036037,279.076159 C115.015563,279.074048 115,279.056799 115,279.036216 L115,279.036216 C115,279.016215 115.016215,279 115.036216,279 Z" id="Rectangle-red"></path>
+        </g>
+    </g>
+</svg>

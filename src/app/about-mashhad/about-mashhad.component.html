@@ -1,0 +1,30 @@
+<notifier-container></notifier-container>
+<div class="place" *ngFor="let item of about$">
+  <div class="container">
+  <div class="place_header">
+    <div class="row">
+
+        <div class="col-4">
+            <img src="http://panel.irsocapp.com{{ item.picture }}" alt="">
+        </div>
+        <div class="col-8">
+            <div class="about">
+                <a [routerLink]="['/aboutMashhad', about$]" (click)="onClick(item.id)" >
+                  <h3 class=title>{{item.title}}</h3>
+                </a>
+                <p class="description" [innerHTML]="item.description"></p>
+            </div>
+        </div>
+        <!-- <div class="col-4">
+            <img src="https://panel.irsocapp.com{{ item.picture }}" alt="">
+        </div> -->
+    </div>
+
+
+    </div>
+    <div class="address">
+      <img src="../../assets/icons/Telegram Archive (4)/location.svg" alt="">
+      <span>{{item.location}}</span>
+    </div>
+  </div>
+</div>

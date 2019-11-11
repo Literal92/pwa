@@ -1,0 +1,80 @@
+<notifier-container></notifier-container>
+<div class="course_details">
+  <div class="container">
+    <p class="course_title">{{workshop$.title}}</p>
+    <div class="course_button">
+      <div class="row">
+
+        <div class="col-6 add_note">
+          <button [routerLink]="['/AddNote/InstructionalCourses : '+ workshop$.title]" >Add Note</button>
+        </div>
+        <div class="col-6 show_notes">
+          <button [routerLink]="['/notes']">Show Notes</button>
+        </div>
+      </div>
+    </div>
+    <div class="rating">
+        <div style="background: #fff;border-radius: 50px " > <span class="title">Your Score :</span>
+          <star-rating value="{{myScore}}" checkedcolor="gold" uncheckedcolor="gray" size="25px"
+            readonly="false" (rate)="ratingClick($event,id)"></star-rating>
+        </div>
+    </div>
+    <div class="rating" *ngIf="workshop$.rating != 0">
+      <div style="background: #fff;border-radius: 50px " > <span class="title">Average :</span>
+        <star-rating value="{{workshop$.rating.toFixed(0)}}" checkedcolor="gold" uncheckedcolor="gray" size="25px"
+          readonly="true"></star-rating>
+      </div>
+    </div>
+    <div class="date">
+      <div class="row">
+
+        <div class="col-6 text-center">
+          <span>{{workshop$.week}}</span>
+          <span>|</span>
+          <span>{{workshop$.day}} {{workshop$.month}}</span>
+        </div>
+        <div class="col-6 text-center">
+          <span>{{workshop$.start}}</span>
+          <span> - </span>
+          <span>{{workshop$.end}}</span>
+        </div>
+
+      </div>
+    </div>
+    <div class="room">
+      <img src="../../assets/icons/Telegram Archive (4)/location.svg" alt="">
+      <span>{{workshop$.location}}</span>
+    </div>
+    <div class="speakers">
+      <h3>Moderator</h3>
+       <ul *ngFor="let item of workshop$.moderator; index as i"> <!--*ngFor="let item of lecture.moderator; index as i" -->
+        <li>{{item}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="course_lecture_fields" *ngFor="let item of workshop$.topic">
+  <div class="container" >
+    <div class="lecture">
+      <p class="title">{{item.title}}</p>
+      <ul *ngFor="let items of item.speaker; index as i"> <!--*ngFor="let item of lecture.moderator; index as i" -->
+        <li class="name">{{items}}</li>
+      </ul>
+      <!-- <p class="name">{{item.speaker}}</p> -->
+      <p class="time">
+        <span>{{item.startT}}</span>
+        <span> - </span>
+        <span>{{item.endT}}</span>
+      </p>
+    </div>
+    <!-- <div class="lecture">
+      <p class="title">Best Cases For New ICR Implantation</p>
+      <p class="name">Khosro Jadidi, MD</p>
+      <p class="time">
+        <span>14:30</span>
+        <span> - </span>
+        <span>14:40</span>
+      </p>
+    </div> -->
+  </div>
+</div>

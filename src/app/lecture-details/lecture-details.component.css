@@ -1,0 +1,131 @@
+@font-face {
+	font-family: cairo;
+	src: url("../../assets/fonts/Cairo-Regular.ttf");
+}
+*{
+    font-family: "cairo" !important;
+}
+.lecture_details_field{
+  background: #fff;
+  margin: 20px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+}
+.lecture_details_field .detail_name{
+  color: #767676;
+}
+.detail_title{
+  font-weight: bold;
+  color: #012c3d;
+  font-size: 14px;
+}
+.details_btn{
+  margin: 20px 0px
+}
+.details_btn .add_note{
+  background:  #012c3d;
+  border: 2px solid #012c3d;
+  color: #fff;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.details_btn .show_note{
+  background: #ffffff;
+  border: 2px solid #012c3d;
+  color: #012c3d;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.lecture_date{
+  margin: 20px 0px;
+  background: rgba(119, 189, 196, .2);
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+.lecture_date span{
+  font-size: 13px;
+  padding: 0px 2px;
+}
+.lecture_room {
+  padding: 10px 0px;
+  color: #a6a6a6;
+  font-size: 14px;
+  direction: ltr;
+}
+.lecture_room img{
+  width: 20px;
+}
+.lecture_room p{
+  display: inline-block;
+  padding-left: 5px;
+}
+.lecture_details_field h3{
+  font-size: 14px;
+  color: #012c3d;
+  overflow: hidden;
+  direction: rtl;
+}
+.lecture_details_field h3::before{
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #767676;
+  margin-right: -100%;
+  position: relative;
+  bottom: 3px;
+  left: 10px;
+}
+.lecture_details_field ul li{
+  font-size: 12px;
+  color: #a6a6a6;
+  line-height: 2em;
+  list-style-type: none
+}
+
+.booth_rating{
+  direction: ltr;
+  margin-top: 15px;
+}
+.booth_rating star-rating{
+  float: right;
+}
+.booth_rating star-rating span{
+  direction: ltr;
+}
+
+.topic_list{
+  margin: 20px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  box-shadow: 0px 2px 6px 0px rgba(238,238,238,1);
+  padding:15px;
+}
+.topic_title{
+  color: #012c3d;
+  font-weight: bold;
+  font-size: 13px;
+}
+.speakers p{
+  color: #767676;
+  font-size: 13px;
+}
+.topic_time{
+  text-align: right;
+}
+.topic_time span{
+  color: #012c3d;
+  margin: 0px 3px;
+  font-size: 12px;
+}
+.base_container{
+  padding-top:50px;
+}
